@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaDraftingCompass, FaTools, FaBolt } from "react-icons/fa"; // Example icons
 import "../styles/pages/Home.css"; // make sure this CSS file exists
-import heroImage from "../assets/hero-image.png"; // make sure this image exists
-import CTAImage from "../assets/project1.png"; // make sure this image exists
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project1.png";
+import heroImage from "../assets/hero-image.webp"; // make sure this image exists
+import CTAImage from "../assets/project1.webp"; // make sure this image exists
+import project1 from "../assets/project1.webp";
+import project2 from "../assets/project2.webp";
+import project3 from "../assets/project1.webp";
 
 const Home = () => {
     return (
