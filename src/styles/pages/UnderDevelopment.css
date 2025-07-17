@@ -1,0 +1,43 @@
+.under-dev-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+  padding: 20px;
+}
+
+.under-dev-content {
+  text-align: center;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.under-dev-content h1 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 15px;
+}
+
+.under-dev-content p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.go-home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.go-home-button:hover {
+  background-color: #374151;
+}

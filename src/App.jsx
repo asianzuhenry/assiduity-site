@@ -1,16 +1,28 @@
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import UnderDevelopment from './pages/UnderDevelopment';
+import './app.css'
+import './index.css'
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import WhatsappButton from './components/WhatsappButton';
 
 function App() {
-
   return (
     <>
-    <div>
-      <h1>
-      welcome to assiduity
-      </h1>
-    </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<UnderDevelopment />} />
+        <Route path="/services" element={<UnderDevelopment />} />
+        <Route path="/projects" element={<UnderDevelopment />} />
+        <Route path="/contact" element={<UnderDevelopment />} />
+        <Route path="*" element={<UnderDevelopment />} />
+      </Routes>
+      <Footer />
+      <WhatsappButton />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
