@@ -119,8 +119,9 @@ const Home = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                <a className="view-all" href="/projects">View All Projects</a>
+                    <Link to="/projects" className="view-all">
+                        View All Projects
+                    </Link>
             </section>
             {/* Call to Action */}
             <section className="cta-banner"
