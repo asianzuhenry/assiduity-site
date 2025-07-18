@@ -1,0 +1,146 @@
+/* src/styles/Contact.css */
+
+.contact-page {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.contact-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 16px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  color: #1f2937;
+  transition: border 0.3s;
+}
+
+.dark .contact-form input,
+.dark .contact-form textarea {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: var(--accent);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #2563eb;
+}
+
+.contact-form button:hover {
+  background-color: #334155;
+
+}
+
+.status {
+  margin-top: -10px;
+  font-size: 0.95rem;
+  padding-left: 5px;
+}
+
+.status.success {
+  color: green;
+}
+.status.error {
+  color: red;
+}
+.status.sending {
+  color: orange;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 16px var(--shadow);
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+}

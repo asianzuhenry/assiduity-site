@@ -6,6 +6,7 @@ import './index.css'
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import WhatsappButton from './components/WhatsappButton';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/about" element={<UnderDevelopment />} />
         <Route path="/services" element={<UnderDevelopment />} />
         <Route path="/projects" element={<UnderDevelopment />} />
-        <Route path="/contact" element={<UnderDevelopment />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<UnderDevelopment />} />
       </Routes>
       <Footer />
