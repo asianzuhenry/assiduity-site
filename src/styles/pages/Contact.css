@@ -4,24 +4,23 @@
   padding: 60px 20px;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg);
-  color: var(--text);
 }
 
 .contact-header {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .contact-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  color: var(--accent);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #2563eb;
 }
 
 .contact-header p {
   max-width: 600px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0.9;
 }
 
