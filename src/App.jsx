@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import WhatsappButton from './components/WhatsappButton';
 import Contact from './pages/Contact';
+import Services from './pages/Services';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<UnderDevelopment />} />
-        <Route path="/services" element={<UnderDevelopment />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<UnderDevelopment />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<UnderDevelopment />} />
