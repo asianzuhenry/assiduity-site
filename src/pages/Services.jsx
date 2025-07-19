@@ -1,7 +1,6 @@
 // src/pages/Services.jsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaDraftingCompass, FaTools, FaBolt } from "react-icons/fa";
 import "../styles/pages/Services.css";
 
 const Services = () => {
@@ -19,12 +18,12 @@ const Services = () => {
       <section className="services-list">
         <motion.div
           className="service-card"
+          id="service-card1"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <FaDraftingCompass className="service-icon" />
           <h3>Architectural Design</h3>
           <p>
             We develop comprehensive architectural solutions including building layout plans, 3D models, floor designs, and site analysis. Our services support residential homes, multi-unit buildings, commercial developments, and institutional projects.
@@ -37,12 +36,12 @@ const Services = () => {
 
         <motion.div
           className="service-card"
+          id="service-card2"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <FaTools className="service-icon" />
           <h3>Mechanical Design</h3>
           <p>
             Our mechanical engineering services include HVAC design, plumbing layouts, water supply systems, and fire protection systems for buildings of all types. We also handle equipment sizing, duct routing, energy efficiency modeling, and ventilation studies.
@@ -55,12 +54,12 @@ const Services = () => {
 
         <motion.div
           className="service-card"
+          id="service-card3"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <FaBolt className="service-icon" />
           <h3>Electrical Design</h3>
           <p>
             We offer full-scale electrical design services including load estimation, wiring diagrams, lighting design, circuit breaker schedules, power distribution, generator backup integration, and lightning protection systems.
@@ -79,11 +78,13 @@ const Services = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2>Need a customized solution?</h2>
-        <p>
-          Let us help you design, plan, and implement infrastructure that meets your exact requirements. Whether it's a small home upgrade or a large-scale institutional project — we deliver excellence.
-        </p>
-        <Link to="/contact" className="cta-button">Contact Us</Link>
+        <div className="services-cta-div">
+          <h2>Need a customized solution?</h2>
+          <p>
+            Let us help you design, plan, and implement infrastructure that meets your exact requirements. Whether it's a small home upgrade or a large-scale institutional project — we deliver excellence.
+          </p>
+          <Link to="/contact" className="cta-button">Contact Us</Link>
+        </div>
       </motion.section>
     </div>
   );

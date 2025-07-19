@@ -1,0 +1,118 @@
+/* styles/ServiceDetail.css */
+
+.service-detail-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Hero Section */
+.service-hero {
+  position: relative;
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+}
+
+.service-hero .overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #0059e7;
+}
+
+.service-hero .overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Background Image Example */
+.architectural-hero {
+  background-image: url("../../assets/image1.webp");
+  height: 100vh;
+}
+
+.mechanical-hero {
+  background-image: url("../../assets/image2.webp");
+  height: 100vh;
+}
+
+.electrical-hero {
+  height: 100vh;
+  background-image: url("../../assets/project2.webp");
+}
+
+/* Service Sections */
+.service-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.service-section h2 {
+  font-size: 1.8rem;
+  color: #cf8700;
+  margin-bottom: 10px;
+}
+
+.service-section p {
+  font-size: 1.2rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-section ul {
+  padding-left: 20px;
+  color: #1f2937;
+}
+
+.service-section ul li {
+  margin-bottom: 10px;
+  list-style: disc;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-hero .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .service-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-section {
+    margin: 30px 15px;
+  }
+}
+
+
+
+.back-toservices-button {
+  background-color: #facc15;
+  color: #1e293b;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.back-toservices-button:hover {
+  background-color: #eab308;
+}

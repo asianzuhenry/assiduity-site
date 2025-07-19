@@ -98,12 +98,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 12px;
 }
 
 .service-card div.service-div {
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: #1e3a8a;
+}
+.service-card div.service-div .icon {
+  font-size: 2.5rem;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 12px;
 }
 .service-card p {
   font-size: 1.2rem;

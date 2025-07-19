@@ -1,27 +1,26 @@
 /* Services.css */
 
 .services-page {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgba(0, 0, 0, 0.69);
 }
 
 .services-hero {
-  background: url('../../assets/hero-image.webp') no-repeat center center/cover;
-  position: relative;
+  background: url("../../assets/image1.webp") no-repeat center center/cover;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: rgba(0, 6, 41, 0.67);
   color: white;
   padding: 40px;
-  border-radius: 10px;
   text-align: center;
-  max-width: 800px;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay h1 {
@@ -32,6 +31,8 @@
 .hero-overlay p {
   font-size: 1.2rem;
   opacity: 0.9;
+  max-width: 800px;
+  width: 100%;
 }
 
 .services-list {
@@ -46,33 +47,51 @@
 
 .service-card {
   flex: 1 1 300px;
-  background-color: grey;
   border: 1px solid ghostwhite;
   border-radius: 12px;
-  padding: 30px;
+  padding: 12px 30px;
   text-align: left;
-  box-shadow: 0 6px 16px ghostwhite;
   transition: transform 0.3s ease;
+  min-height: 450px;
+}
+#service-card1 {
+  background-color: rgb(16, 49, 65);
+}
+#service-card2 {
+  background-color: rgb(130, 126, 1);
+}
+#service-card3 {
+  background-color: #7a4100;
 }
 
 .service-card:hover {
   transform: translateY(-8px);
 }
 
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
 
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #1e40af;
+  color: #0000fe;
 }
 
 .service-card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   opacity: 0.9;
+  color: white;
 }
 
 .service-link {
+  font-size: 1.2rem;
   display: inline-block;
   margin-top: 10px;
   color: #1e40af;
@@ -82,20 +101,27 @@
 
 .service-link:hover {
   text-decoration: underline;
+  color: #00b3ff;
 }
 
 .services-cta {
-  background: url('../../assets/hero-image.webp') no-repeat center center/cover;
+  background: url("../../assets/project1.webp") no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 50px 20px;
   margin-top: 40px;
   border-radius: 12px;
   height: 100vh;
+}
+
+.services-cta .services-cta-div {
+  background-color: #031654a8;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 20px;
 }
 
 .services-cta h2 {
@@ -133,5 +159,10 @@
 
   .hero-overlay h1 {
     font-size: 2rem;
+  }
+
+  .service-card {
+    min-height: 500px;
+    padding: 8px;
   }
 }

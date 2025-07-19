@@ -7,7 +7,7 @@ import heroImage from "../assets/hero-image.webp"; // make sure this image exist
 import CTAImage from "../assets/project1.webp"; // make sure this image exists
 import project1 from "../assets/project1.webp";
 import project2 from "../assets/project2.webp";
-import project3 from "../assets/project1.webp";
+import project3 from "../assets/project3.webp";
 
 const Home = () => {
     return (
@@ -102,26 +102,44 @@ const Home = () => {
                 </p>
 
                 <div className="projects-grid">
-                    {[project1, project2, project3].map((img, index) => (
-                        <motion.div
-                            key={index}
-                            className="project-card"
-                            whileHover={{ scale: 1.02 }}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
-                        >
-                            <img src={img} alt={`Project ${index + 1}`} />
-                            <h4>Project Title {index + 1}</h4>
-                            <p style={{ padding: "0 15px 20px" }}>
-                                A detailed brief about the design goals, systems used, and final outcome of this project.
-                            </p>
-                        </motion.div>
-                    ))}
+                    {[
+                        {
+                            imgsrc: project1,
+                            title: "PrimeTech Towers – Kampala CBD",
+                            desc:
+                                "A high-rise commercial building housing tech startups and co-working spaces. Our team provided complete electrical designs including load estimation, floor-by-floor lighting plans, and CCTV/data integration — with LEED-compliant energy efficiency modeling.",
+                        },
+                        {
+                            imgsrc: project2,
+                            title: "MakTech Research Labs – Makerere",
+                            desc:
+                                "An institutional project requiring advanced mechanical systems for ventilation, pressure zoning, and safety integration. We handled mechanical planning, electrical layout design, and coordinated fire suppression systems with BIM documentation.",
+                        },
+                        {
+                            imgsrc: project3,
+                            title: "Modern Residential Villa – Bukoto",
+                            desc:
+                                "A luxurious two-story residence with contemporary architecture, passive cooling design, and integrated solar backup systems. We delivered full architectural, mechanical (HVAC & plumbing), and electrical (lighting & distribution) design solutions.",
+                        }].map((project, index) => (
+                            <motion.div
+                                key={index}
+                                className="project-card"
+                                whileHover={{ scale: 1.02 }}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.2 }}
+                            >
+                                <img src={project.imgsrc} alt={`Project ${index + 1}`} />
+                                <h4>{project.title}</h4>
+                                <p style={{ padding: "0 15px 20px" }}>
+                                    {project.desc}
+                                </p>
+                            </motion.div>
+                        ))}
                 </div>
-                    <Link to="/projects" className="view-all">
-                        View All Projects
-                    </Link>
+                <Link to="/projects" className="view-all">
+                    View All Projects
+                </Link>
             </section>
             {/* Call to Action */}
             <section className="cta-banner"
