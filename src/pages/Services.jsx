@@ -10,7 +10,7 @@ const Services = () => {
         <div className="hero-overlay">
           <h1>Our Core Services</h1>
           <p>
-            At Assiduity Engineering Ltd, we specialize in delivering high-quality, tailored solutions in architectural design, mechanical systems, and electrical engineering across both residential and commercial projects.
+            At Assiduity Engineering Ltd, we specialize in delivering high-quality, tailored solutions in plumbing design, mechanical systems, and electrical engineering across both residential and commercial projects.
           </p>
         </div>
       </section>

@@ -25,7 +25,7 @@ const Home = () => {
                 <div className="hero-text">
                     <h1>Engineering Designs that Build the Future</h1>
                     <p>
-                        Assiduity Engineering offers cutting-edge architectural, mechanical,
+                        Assiduity Engineering offers cutting-edge plumbing, mechanical,
                         and electrical design solutions. We turn ideas into functional,
                         aesthetic, and sustainable spaces.
                     </p>

@@ -19,7 +19,7 @@ const Electrical = () => {
       <section className="service-section">
         <h2>Our Electrical Services</h2>
         <p>
-          Our electrical design services cover lighting, power distribution, backup systems, and low-voltage wiring. We ensure safety, scalability, and seamless integration with architectural and mechanical systems.
+          Our electrical design services cover lighting, power distribution, backup systems, and low-voltage wiring. We ensure safety, scalability, and seamless integration with plumbing and mechanical systems.
         </p>
         <ul>
           <li>Load calculations and distribution board schedules</li>
