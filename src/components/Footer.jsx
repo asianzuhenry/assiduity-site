@@ -12,14 +12,14 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-col">
           <h3>Assiduity Engineering Co. Ltd</h3>
-          <p>Architectural, Mechanical & Electrical Design Specialists</p>
+          <p>Plumbing, Mechanical & Electrical Design Specialists</p>
         </div>
 
         <div className="footer-col">
           <h4>Contact</h4>
           <p>Email: <a href="mailto:johnamanyire29@gmail.com">johnamanyire29@gmail.com</a></p>
-          <p>Phone: +256 777 036 622</p>
-          <p>WhatsApp: +256 743 755 232</p>
+          <p>Phone: +256 743 755 232</p>
+          <p>WhatsApp: +256 774 890 315</p>
           <p>Location: Impala House, Rm 06, 6th Floor</p>
           <p>P.O. Box 184939 Kampala</p>
         </div>

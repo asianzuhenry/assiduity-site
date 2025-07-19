@@ -24,14 +24,14 @@ const Services = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3>Architectural Design</h3>
+          <h3>Plumbing Design</h3>
           <p>
-            We develop comprehensive architectural solutions including building layout plans, 3D models, floor designs, and site analysis. Our services support residential homes, multi-unit buildings, commercial developments, and institutional projects.
+            We provide professional plumbing design solutions for water supply, drainage, and sanitation systems in residential, commercial, and industrial buildings.
           </p>
           <p>
-            Our team ensures all designs meet structural standards, environmental considerations, and client aesthetics. From sketches to digital BIM models — we guide your vision to execution.
+            Our team ensures compliance with building codes and environmental standards, offering detailed layout drawings and coordination with civil and mechanical systems.
           </p>
-          <Link to="/services/architectural" className="service-link">Learn more →</Link>
+          <Link to="/services/plumbing" className="service-link">Learn more →</Link>
         </motion.div>
 
         <motion.div

@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="dropdown">
           <button className="dropbtn">Services</button>
           <div className="dropdown-content">
-            <Link to="/services/architectural">Architectural</Link>
+            <Link to="/services/plumbing">Plumbing</Link>
             <Link to="/services/mechanical">Mechanical</Link>
             <Link to="/services/electrical">Electrical</Link>
           </div>

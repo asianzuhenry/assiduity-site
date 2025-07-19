@@ -1,13 +1,13 @@
 // Home.jsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaDraftingCompass, FaTools, FaBolt } from "react-icons/fa"; // Example icons
+import { FaWater, FaTools, FaBolt } from "react-icons/fa"; // Example icons
 import "../styles/pages/Home.css"; // make sure this CSS file exists
 import heroImage from "../assets/hero-image.webp"; // make sure this image exists
 import CTAImage from "../assets/project1.webp"; // make sure this image exists
-import project1 from "../assets/project1.webp";
-import project2 from "../assets/project2.webp";
-import project3 from "../assets/project3.webp";
+import project1 from "../assets/electric1.webp";
+import project2 from "../assets/project3.webp";
+import project3 from "../assets/plumbing2.webp";
 
 const Home = () => {
     return (
@@ -49,10 +49,10 @@ const Home = () => {
                 <div className="services-grid">
                     {[
                         {
-                            icon: <FaDraftingCompass />,
-                            title: "Architectural Design",
+                            icon: <FaWater />,
+                            title: "Plumbing Design",
                             desc:
-                                "We craft building designs that merge form and function, ensuring structural integrity, regulatory compliance, and aesthetic impact.",
+                                "Our plumbing design services ensure reliable, efficient, and sustainable water systems across all building types.",
                         },
                         {
                             icon: <FaTools />,
@@ -117,9 +117,9 @@ const Home = () => {
                         },
                         {
                             imgsrc: project3,
-                            title: "Modern Residential Villa – Bukoto",
+                            title: "Urban Heights Apartments – Ntinda",
                             desc:
-                                "A luxurious two-story residence with contemporary architecture, passive cooling design, and integrated solar backup systems. We delivered full architectural, mechanical (HVAC & plumbing), and electrical (lighting & distribution) design solutions.",
+                                "A plumbing overhaul project for a residential complex facing drainage failures. We redesigned the entire water management system, improved wastewater flow, and implemented a rainwater harvesting system to boost sustainability and efficiency.",
                         }].map((project, index) => (
                             <motion.div
                                 key={index}

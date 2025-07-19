@@ -1,8 +1,8 @@
 import "../styles/components/WhatsappButton.css"; // Ensure this CSS file exists
 
 const WhatsappButton = () => {
-    // const phoneNumber = "256743755232"; // This is the WhatsApp number
-    const phoneNumber = "256773450950" // This is a test WhatsApp number
+    const phoneNumber = "256774890315"; // This is the WhatsApp number
+    // const phoneNumber = "256773450950" // This is a test WhatsApp number
 
     return (
         <a

@@ -38,8 +38,8 @@
 }
 
 /* Background Image Example */
-.architectural-hero {
-  background-image: url("../../assets/image1.webp");
+.plumbing-hero {
+  background-image: url("../../assets/plumbing1.webp");
   height: 100vh;
 }
 
@@ -50,7 +50,7 @@
 
 .electrical-hero {
   height: 100vh;
-  background-image: url("../../assets/project2.webp");
+  background-image: url("../../assets/electric2.webp");
 }
 
 /* Service Sections */
