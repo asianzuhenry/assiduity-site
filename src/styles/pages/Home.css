@@ -89,7 +89,7 @@
 
 .service-card {
   flex: 1 1 280px;
-  background-color: #e5e7eb;
+  background-color: #393f4a;
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -123,7 +123,6 @@
   transition: transform 0.3s ease;
   transform: translateY(-5px);
   cursor: pointer;
-  background-color: #d5dae1;
 }
 
 /* Featured Projects */
@@ -156,7 +155,7 @@
 
 .project-card {
   flex: 1 1 280px;
-  background-color: #ffffff;
+  background-color: #e7e7e7;
   border: 1px solid #d1d5db;
   border-radius: 10px;
   overflow: hidden;
