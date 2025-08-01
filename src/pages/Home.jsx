@@ -121,7 +121,7 @@ const Home = () => {
                             desc:
                                 "A plumbing overhaul project for a residential complex facing drainage failures. We redesigned the entire water management system, improved wastewater flow, and implemented a rainwater harvesting system to boost sustainability and efficiency.",
                         }].map((project, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 className="project-card"
                                 whileHover={{ scale: 1.02 }}
@@ -134,7 +134,7 @@ const Home = () => {
                                 <p style={{ padding: "0 15px 20px" }}>
                                     {project.desc}
                                 </p>
-                            </motion.div>
+                            </div>
                         ))}
                 </div>
                 <Link to="/projects" className="view-all">

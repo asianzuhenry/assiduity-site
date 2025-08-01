@@ -30,6 +30,9 @@
   gap: 40px;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto 0px auto;
   margin-top: 40px;
 }
 

@@ -151,6 +151,9 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto 0px auto;
 }
 
 .project-card {
@@ -161,7 +164,7 @@
   overflow: hidden;
   text-align: left;
   transition: box-shadow 0.3s ease;
-  height: 360px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
