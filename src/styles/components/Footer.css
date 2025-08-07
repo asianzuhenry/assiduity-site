@@ -1,7 +1,7 @@
 
 /* Footer Main */
 .footer {
-  background-color: #111827;
+  background-color: var(--color-primary-dark);
   color: #d1d5db;
   padding: 40px 10%;
   display: flex;
@@ -36,8 +36,8 @@
 }
 
 .footer-bottom {
-  background-color: #0f172a;
-  color: #9ca3af;
+  background-color: var(--color-primary-dark);
+  color: var(--color-grey);
   text-align: center;
   padding: 15px;
   font-size: 1rem;

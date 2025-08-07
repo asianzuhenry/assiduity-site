@@ -7,7 +7,7 @@
 
 /* Navbar Container */
 .navbar {
-  background-color: #1e3a8a;
+  background-color: var(--color-primary-dark);
   color: white;
   padding: 15px 20px;
   display: flex;
@@ -57,7 +57,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1e3a8a;
+  background-color: var(--color-primary-dark);
   top: 100%;
   left: 0;
   min-width: 200px;
@@ -72,8 +72,8 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #facc15;
-  color: #1e3a8a;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
   /* background-color: #475569; */
 }
 
@@ -97,7 +97,7 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #1e3a8a;
+    background-color: var(--color-primary-dark);
     margin-top: 10px;
   }
 

@@ -2,7 +2,6 @@
 
 .services-page {
   font-family: "Segoe UI", sans-serif;
-  background-color: rgba(0, 0, 0, 0.69);
 }
 
 .services-hero {
@@ -11,7 +10,8 @@
 }
 
 .hero-overlay {
-  background-color: rgba(0, 6, 41, 0.67);
+  /* background-color: var(--color-primary-dark);
+  opacity: 0.1; */
   color: white;
   padding: 40px;
   text-align: center;
@@ -24,11 +24,13 @@
 }
 
 .hero-overlay h1 {
+  color: var(--color-secondary);
   font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
 .hero-overlay p {
+  color: var(--color-black);
   font-size: 1.2rem;
   opacity: 0.9;
   max-width: 800px;
@@ -42,66 +44,60 @@
   align-items: center;
   gap: 30px;
   padding: 60px 20px;
-  height: 100vh;
+  height: 100%;
 }
 
-.service-card {
-  flex: 1 1 300px;
-  border: 1px solid ghostwhite;
-  border-radius: 12px;
+.services-card {
+  /* flex: 1 1 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
   padding: 12px 30px;
   text-align: left;
   transition: transform 0.3s ease;
   min-height: 450px;
-}
-#service-card1 {
-  background-color: rgb(16, 49, 65);
-}
-#service-card2 {
-  background-color: rgb(130, 126, 1);
-}
-#service-card3 {
-  background-color: #7a4100;
+  /* border: solid; */
 }
 
-.service-card:hover {
-  transform: translateY(-8px);
+hr {
+  color: var(--color-black);
+  border: 0.1rem solid;
+  opacity: 0.4;
+  width: 100%;
+  margin-top: 10%;
 }
 
-.service-icon {
-  font-size: 4rem;
-  margin-bottom: 15px;
-  padding: 8px;
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-}
-
-.service-card h3 {
+.services-card h3 {
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #0000fe;
 }
 
-.service-card p {
+.services-card p {
   font-size: 1.2rem;
   margin-bottom: 10px;
   opacity: 0.9;
-  color: white;
+  color: var(--color-black);
 }
 
-.service-link {
-  font-size: 1.2rem;
+.services-link {
+  font-size: 1rem;
   display: inline-block;
   margin-top: 10px;
-  color: #1e40af;
+  color: var(--color-secondary);
   font-weight: bold;
   text-decoration: none;
+  transition: 0.5s;
 }
 
-.service-link:hover {
+.services-link:hover {
+  transition: 0.5s;
   text-decoration: underline;
-  color: #00b3ff;
+  color: var(--color-secondary-light);
 }
 
 .services-cta {
@@ -136,20 +132,6 @@
   opacity: 0.95;
 }
 
-.cta-button {
-  background-color: white;
-  color: #1e40af;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #133985;
-  color: white;
-}
 
 @media (max-width: 768px) {
   .services-list {
@@ -161,7 +143,7 @@
     font-size: 2rem;
   }
 
-  .service-card {
+  .services-card {
     min-height: 500px;
     padding: 8px;
   }

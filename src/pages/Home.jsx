@@ -8,6 +8,7 @@ import CTAImage from "../assets/project1.webp"; // make sure this image exists
 import project1 from "../assets/electric1.webp";
 import project2 from "../assets/project3.webp";
 import project3 from "../assets/plumbing2.webp";
+import CTA from "../components/CTA";
 
 const Home = () => {
     return (
@@ -76,9 +77,9 @@ const Home = () => {
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
                             <div className="service-div">
-                                <div className="icon">
+                                {/* <div className="icon">
                                     {service.icon}
-                                </div>
+                                </div> */}
                                 <h3>{service.title}</h3>
                             </div>
                             <p>{service.desc}</p>
@@ -130,10 +131,12 @@ const Home = () => {
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
                             >
                                 <img src={project.imgsrc} alt={`Project ${index + 1}`} />
-                                <h4>{project.title}</h4>
-                                <p style={{ padding: "0 15px 20px" }}>
-                                    {project.desc}
-                                </p>
+                                <div className="project-text">
+                                    <h4>{project.title}</h4>
+                                    <p style={{ padding: "0 15px 20px" }}>
+                                        {project.desc}
+                                    </p>
+                                </div>
                             </div>
                         ))}
                 </div>
@@ -142,22 +145,8 @@ const Home = () => {
                 </Link>
             </section>
             {/* Call to Action */}
-            <section className="cta-banner"
-                style={{
-                    backgroundImage: `url(${CTAImage})`,
-                }}
-            >
-                <div className="content">
-                    <h2>Have a project in mind?</h2>
-                    <p>
-                        Let Assiduity Engineering help you bring it to life with expert AME
-                        design services.
-                    </p>
-                    <Link to="/contact" className="cta-button">
-                        Contact Us
-                    </Link>
-                </div>
-            </section>
+            <CTA backgroundImageLink = {CTAImage} Title={"Have a project in mind?"} Description={"Let Assiduity Engineering help you bring it to life with expert AME design services."}/>
+
         </div>
     );
 };

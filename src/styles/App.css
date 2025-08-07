@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* App.css or index.css */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #0059e7;
+  --color-primary-dark: #111827;
+  --color-secondary: #cf8700;
+  --color-secondary-light: #eab308;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: grey;
+}

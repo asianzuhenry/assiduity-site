@@ -29,7 +29,7 @@
 .service-hero .overlay h1 {
   font-size: 2.8rem;
   margin-bottom: 15px;
-  color: #0059e7;
+  color: var(--color-primary);
 }
 
 .service-hero .overlay p {
@@ -62,7 +62,7 @@
 
 .service-section h2 {
   font-size: 1.8rem;
-  color: #cf8700;
+  color: var(--color-secondary);
   margin-bottom: 10px;
 }
 
@@ -103,7 +103,7 @@
 
 
 .back-toservices-button {
-  background-color: #facc15;
+  background-color: var(--color-secondary);
   color: #1e293b;
   padding: 12px 24px;
   border-radius: 5px;
@@ -114,5 +114,5 @@
 }
 
 .back-toservices-button:hover {
-  background-color: #eab308;
+  background-color: var(--color-secondary-light);
 }
