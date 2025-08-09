@@ -10,6 +10,7 @@ import Services from './pages/Services';
 import Mechanical from './pages/Mechanical';
 import Electrical from './pages/Electrical';
 import Plumbing from './pages/Plumbing';
+import Furniture from "./pages/Furniture";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<UnderDevelopment />} />
         <Route path="/contact" element={<Contact />} />
-         <Route path="/services/plumbing"  element={<Plumbing />} />
-         <Route path="/services/mechanical"  element={<Mechanical />} />
-         <Route path="/services/electrical"  element={<Electrical />} />
+        <Route path="/services/plumbing" element={<Plumbing />} />
+        <Route path="/services/mechanical" element={<Mechanical />} />
+        <Route path="/services/electrical" element={<Electrical />} />
+        <Route path="/services/furniture" element={<Furniture />} />
         <Route path="*" element={<UnderDevelopment />} />
       </Routes>
       <Footer />

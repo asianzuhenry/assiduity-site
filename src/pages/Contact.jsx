@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/pages/Contact.css"; // make sure this CSS file exists
+import { Helmet } from "react-helmet";
 
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -30,48 +31,58 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
-      <div className="contact-header">
-        <h1>Contact Us</h1>
-        <p>
-          We would love to hear from you! Whether it's a question about our services, a quote for your next project, or general inquiries — just drop us a message.
-        </p>
-      </div>
+    <>
 
-      <div className="contact-wrapper">
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <label>
-            Your Name
-            <input type="text" name="name" required />
-          </label>
+      <Helmet>
+        <title>Contact Us | Assiduity Engineering Ltd</title>
+        <meta name="description" content="Reach out to Assiduity Engineering for consultations, project inquiries, or partnership opportunities in building design and MEP services." />
+        <meta name="keywords" content="contact Assiduity, engineering firm Uganda, building project support, MEP consultation, design services" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
-          <label>
-            Your Email
-            <input type="email" name="email" required />
-          </label>
+      <div className="contact-page">
+        <div className="contact-header">
+          <h1>Contact Us</h1>
+          <p>
+            We would love to hear from you! Whether it's a question about our services, a quote for your next project, or general inquiries — just drop us a message.
+          </p>
+        </div>
 
-          <label>
-            Message
-            <textarea name="message" rows="6" required />
-          </label>
+        <div className="contact-wrapper">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <label>
+              Your Name
+              <input type="text" name="name" required />
+            </label>
 
-          <button type="submit">Send Message</button>
+            <label>
+              Your Email
+              <input type="email" name="email" required />
+            </label>
 
-          {status === "success" && <p className="status success">✅ Message sent successfully!</p>}
-          {status === "error" && <p className="status error">❌ Failed to send. Try again.</p>}
-          {status === "sending" && <p className="status sending">⏳ Sending...</p>}
-        </form>
+            <label>
+              Message
+              <textarea name="message" rows="6" required />
+            </label>
 
-        <div className="contact-info">
-          <h2>Get in Touch</h2>
-          <p><strong>Assiduity Engineering Ltd</strong></p>
-          <p>Kampala, Uganda</p>
-          <p>Email: <a href="mailto:info@assiduity.co.ug">info@assiduity.co.ug</a></p>
-          <p>Phone: +256 743 755 232</p>
-          <p>Mon – Fri: 8:00am – 5:00pm</p>
+            <button type="submit">Send Message</button>
+
+            {status === "success" && <p className="status success">✅ Message sent successfully!</p>}
+            {status === "error" && <p className="status error">❌ Failed to send. Try again.</p>}
+            {status === "sending" && <p className="status sending">⏳ Sending...</p>}
+          </form>
+
+          <div className="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Assiduity Engineering Ltd</strong></p>
+            <p>Kampala, Uganda</p>
+            <p>Email: <a href="mailto:info@assiduity.co.ug">info@assiduity.co.ug</a></p>
+            <p>Phone: +256 743 755 232</p>
+            <p>Mon – Fri: 8:00am – 5:00pm</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

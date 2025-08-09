@@ -82,6 +82,8 @@ hr {
   margin-bottom: 10px;
   opacity: 0.9;
   color: var(--color-black);
+  max-width: 1000px;
+  text-align: center;
 }
 
 .services-link {
@@ -100,7 +102,7 @@ hr {
   color: var(--color-secondary-light);
 }
 
-.services-cta {
+/* .services-cta {
   background: url("../../assets/project1.webp") no-repeat center center/cover;
   color: white;
   text-align: center;
@@ -131,7 +133,7 @@ hr {
   margin: 0 auto 20px;
   opacity: 0.95;
 }
-
+ */
 
 @media (max-width: 768px) {
   .services-list {

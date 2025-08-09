@@ -52,6 +52,10 @@
   height: 100vh;
   background-image: url("../../assets/electric2.webp");
 }
+.furniture-hero {
+  height: 100vh;
+  background-image: url("../../assets/furniture.webp");
+}
 
 /* Service Sections */
 .service-section {
