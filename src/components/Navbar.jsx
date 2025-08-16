@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Assiduity</Link>
+        <Link to="/">Assiduity Engineering</Link>
       </div>
 
       <nav className={`navbar-links ${menuOpen ? "open" : ""}`}>
